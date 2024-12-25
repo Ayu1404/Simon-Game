@@ -1,7 +1,9 @@
 body {
   text-align: center;
   background-color: #011F3F;
-  color: #FEF2BF; /* Adding a default text color for consistency */
+  color: #FEF2BF;
+  margin: 0;
+  padding: 0;
 }
 
 #level-title {
@@ -12,17 +14,26 @@ body {
 }
 
 .container {
-  display: block;
-  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
   margin: auto;
 }
 
+.row {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+}
+
 .btn {
-  margin: 25px;
+  margin: 10px;
   display: inline-block;
-  height: 200px;
-  width: 200px;
-  border: 10px solid black;
+  height: 100px;
+  width: 100px;
+  border: 5px solid black;
   border-radius: 20%;
 }
 
@@ -69,10 +80,22 @@ body {
   border: 2px solid #FEF2BF;
   border-radius: 10px;
   display: inline-block;
-  text-align: left; /* Align text to the left for readability */
+  text-align: left;
 }
 
 #sound-toggle {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 1rem;
+  padding: 10px;
+  margin-top: 20px;
+  background-color: #02274C;
+  color: #FEF2BF;
+  border: 2px solid #FEF2BF;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#start-button {
   font-family: 'Press Start 2P', cursive;
   font-size: 1rem;
   padding: 10px;

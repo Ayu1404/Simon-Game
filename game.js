@@ -10,13 +10,23 @@ var soundEnabled = true;
 
 $(document).keypress(function() {
     if (!started) {
-        $("#level-title").text("Level " + level);
-        $("#score").show();
-        $("#sound-toggle").show();
-        nextSequence();
-        started = true;
+        startGame();
     }
 });
+
+$("#start-button").click(function() {
+    if (!started) {
+        startGame();
+    }
+});
+
+function startGame() {
+    $("#level-title").text("Level " + level);
+    $("#score").show();
+    $("#sound-toggle").show();
+    nextSequence();
+    started = true;
+}
 
 $(".btn").click(function() {
     var userChosenColour = $(this).attr("id");
@@ -92,5 +102,5 @@ function startOver() {
     score = 0;
     $("#score-value").text(score);
     $("#score").hide();
-    $("#sound-toggle").hide();  // Hide the sound toggle button when the game is over
+    $("#sound-toggle").hide();
 }
