@@ -6,6 +6,7 @@
   <title>Simon Game</title>
   <link rel="stylesheet" href="styles.css">
   <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
@@ -24,17 +25,20 @@
       <p>5. Try to remember the sequence as long as you can!</p>
     </div>
 
+    <!-- Control Buttons Section -->
+    <div class="control-buttons">
+      <!-- Start Button for Mobile Devices -->
+      <button id="start-button">Start</button>
+      
+      <!-- Sound Toggle Button (Hidden Initially) -->
+      <button id="sound-toggle" style="display:none;">Mute</button>
+    </div>
+
     <!-- Score Display (Hidden Initially) -->
     <div id="score" style="display:none;">
       <h2>Score: <span id="score-value">0</span></h2>
       <h2>Highest Score: <span id="high-score-value">0</span></h2>
     </div>
-
-    <!-- Start Button for Mobile Devices -->
-    <button id="start-button">Start</button>
-
-    <!-- Sound Toggle Button (Hidden Initially) -->
-    <button id="sound-toggle" style="display:none;">Mute</button>
 
     <div class="container">
       <div class="row">

@@ -8,7 +8,7 @@ body {
 }
 
 #level-title {
-  font-size: 2.5rem;
+  font-size: 2rem;
   margin: 20px 0;
   color: #FEF2BF;
 }
@@ -31,8 +31,8 @@ body {
 .btn {
   margin: 10px;
   display: inline-block;
-  height: 100px;
-  width: 100px;
+  height: 80px;
+  width: 80px;
   border: 5px solid black;
   border-radius: 15%;
   transition: background-color 0.3s, transform 0.1s;
@@ -69,27 +69,33 @@ body {
 }
 
 #score {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   margin-top: 10px;
   color: #FEF2BF;
 }
 
 #instructions {
-  font-size: 1rem;
-  margin: 20px 0;
+  font-size: 0.8rem;
+  margin: 10px 0;
   padding: 10px;
   background-color: #02274C;
   border: 2px solid #FEF2BF;
   border-radius: 10px;
   display: inline-block;
   text-align: left;
-  max-width: 80%;
+  max-width: 90%;
+}
+
+.control-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
 }
 
 #sound-toggle, #start-button {
   font-size: 1rem;
   padding: 10px 20px;
-  margin: 10px;
   background-color: #02274C;
   color: #FEF2BF;
   border: 2px solid #FEF2BF;
