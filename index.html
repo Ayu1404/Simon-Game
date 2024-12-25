@@ -3,37 +3,50 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Simon</title>
+  <title>Simon Game</title>
   <link rel="stylesheet" href="styles.css">
   <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
 </head>
 
 <body>
-  <h1 id="level-title">Press A Key to Start</h1>
-  <div class="container">
-    <div lass="row">
+  <header>
+    <h1 id="level-title">Press A Key to Start</h1>
+  </header>
 
-      <div type="button" id="green" class="btn green">
-
-      </div>
-
-      <div type="button" id="red" class="btn red">
-
-      </div>
+  <main>
+    <!-- Instructions Section -->
+    <div id="instructions">
+      <h2>How to Play</h2>
+      <p>1. Press any key to start the game.</p>
+      <p>2. Watch the sequence of colors.</p>
+      <p>3. Repeat the sequence by clicking the colors in the correct order.</p>
+      <p>4. Each round adds one more color to the sequence.</p>
+      <p>5. Try to remember the sequence as long as you can!</p>
     </div>
 
-    <div class="row">
-
-      <div type="button" id="yellow" class="btn yellow">
-
-      </div>
-      <div type="button" id="blue" class="btn blue">
-
-      </div>
-
+    <!-- Score Display (Hidden Initially) -->
+    <div id="score" style="display:none;">
+      <h2>Score: <span id="score-value">0</span></h2>
+      <h2>Highest Score: <span id="high-score-value">0</span></h2>
     </div>
 
-  </div>
+    <div class="container">
+      <div class="row">
+        <div type="button" id="green" class="btn green"></div>
+        <div type="button" id="red" class="btn red"></div>
+      </div>
+      <div class="row">
+        <div type="button" id="yellow" class="btn yellow"></div>
+        <div type="button" id="blue" class="btn blue"></div>
+      </div>
+      <!-- Sound Toggle Button (Hidden Initially) -->
+      <button id="sound-toggle" style="display:none;">Mute</button>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Simon Game. All Rights Reserved.</p>
+  </footer>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script src="game.js" charset="utf-8"></script>
