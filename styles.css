@@ -4,12 +4,12 @@ body {
   color: #FEF2BF;
   margin: 0;
   padding: 0;
+  font-family: 'Press Start 2P', cursive;
 }
 
 #level-title {
-  font-family: 'Press Start 2P', cursive;
-  font-size: 3rem;
-  margin: 5%;
+  font-size: 2.5rem;
+  margin: 20px 0;
   color: #FEF2BF;
 }
 
@@ -34,7 +34,12 @@ body {
   height: 100px;
   width: 100px;
   border: 5px solid black;
-  border-radius: 20%;
+  border-radius: 15%;
+  transition: background-color 0.3s, transform 0.1s;
+}
+
+.btn:active {
+  transform: scale(0.9);
 }
 
 .game-over {
@@ -64,45 +69,40 @@ body {
 }
 
 #score {
-  font-family: 'Press Start 2P', cursive;
   font-size: 1.5rem;
-  margin-top: 20px;
-  margin-bottom: 10px;
+  margin-top: 10px;
   color: #FEF2BF;
 }
 
 #instructions {
-  font-family: 'Press Start 2P', cursive;
   font-size: 1rem;
-  margin-top: 20px;
+  margin: 20px 0;
   padding: 10px;
   background-color: #02274C;
   border: 2px solid #FEF2BF;
   border-radius: 10px;
   display: inline-block;
   text-align: left;
+  max-width: 80%;
 }
 
-#sound-toggle {
-  font-family: 'Press Start 2P', cursive;
+#sound-toggle, #start-button {
   font-size: 1rem;
-  padding: 10px;
-  margin-top: 20px;
+  padding: 10px 20px;
+  margin: 10px;
   background-color: #02274C;
   color: #FEF2BF;
   border: 2px solid #FEF2BF;
   border-radius: 10px;
   cursor: pointer;
+  transition: background-color 0.3s, transform 0.1s;
 }
 
-#start-button {
-  font-family: 'Press Start 2P', cursive;
-  font-size: 1rem;
-  padding: 10px;
-  margin-top: 20px;
-  background-color: #02274C;
-  color: #FEF2BF;
-  border: 2px solid #FEF2BF;
-  border-radius: 10px;
-  cursor: pointer;
+#sound-toggle:hover, #start-button:hover {
+  background-color: #FEF2BF;
+  color: #02274C;
+}
+
+#sound-toggle:active, #start-button:active {
+  transform: scale(0.95);
 }

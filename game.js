@@ -24,6 +24,7 @@ function startGame() {
     $("#level-title").text("Level " + level);
     $("#score").show();
     $("#sound-toggle").show();
+    $("#start-button").hide();
     nextSequence();
     started = true;
 }
@@ -57,7 +58,7 @@ function checkAnswer(currentLevel) {
         setTimeout(function() {
             $("body").removeClass("game-over")
         }, 200);
-        $("#level-title").text("Game Over, Press Any Key to Restart");
+        $("#level-title").text("Game Over, Press Any Key or Click Start to Restart");
 
         // Update the highest score
         if (score > highScore) {
@@ -103,4 +104,5 @@ function startOver() {
     $("#score-value").text(score);
     $("#score").hide();
     $("#sound-toggle").hide();
+    $("#start-button").show();
 }
